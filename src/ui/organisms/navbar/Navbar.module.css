@@ -1,0 +1,14 @@
+.navbar {
+  align-items: center;
+  background: var(--navbar);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8px 16px;
+}
+
+.links {
+  align-items: center;
+  display: flex;
+  flex: 1;
+}

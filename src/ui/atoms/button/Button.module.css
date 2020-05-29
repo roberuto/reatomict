@@ -1,0 +1,53 @@
+@value v-border-radius, v-box-shadow from "../../assets/styles/variables.module.css";
+
+.button {
+  background: var(--primary);
+  border: 0;
+  border-radius: v-border-radius;
+  box-shadow: v-box-shadow;
+  color: var(--primary-text);
+  cursor: pointer;
+  font-size: 14px;
+  height: 36px;
+  outline: 0;
+  padding: 0 12px;
+  position: relative;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background: var(--primary-dark);
+}
+
+.button:active {
+  background: var(--primary-darker);
+  box-shadow: none;
+}
+
+.button.disabled {
+  cursor: not-allowed;
+  color: var(--disabled-text);
+  background: var(--disabled);
+  box-shadow: none;
+}
+
+.button.loading {
+  cursor: normal;
+  opacity: 0.7;
+}
+
+.loading > i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.loading span {
+  color: transparent;
+}

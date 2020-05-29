@@ -1,0 +1,59 @@
+@value m-small from "../../assets/styles/breakpoints.module.css";
+
+.divider {
+  --margin: 0;
+  align-items: center;
+  display: flex;
+  margin: var(--margin) 0;
+  max-height: 1px;
+  min-width: 100%;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.divider:before {
+  border-top: 1px solid var(--color);
+  content: "";
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+  width: 50%;
+}
+
+.divider:after {
+  border-top: 1px solid var(--color);
+  content: "";
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+  width: 50%;
+}
+
+.dividerText {
+  margin: 0 16px;
+}
+
+.left:before {
+  width: 5%;
+}
+
+.left:after {
+  width: 95%;
+}
+
+.right:before {
+  width: 95%;
+}
+
+.right:after {
+  width: 5%;
+}
+
+@media m-small {
+  .left:before,
+  .left:after,
+  .right:before,
+  .right:after {
+    width: 50%;
+  }
+}

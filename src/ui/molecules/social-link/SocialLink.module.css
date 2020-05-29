@@ -1,0 +1,23 @@
+.youtube > * {
+  color: #ff0000;
+}
+
+.youtube > *:hover {
+  color: #db0000;
+}
+
+.facebook > * {
+  color: #4267b2;
+}
+
+.facebook > *:hover {
+  color: #6383d1;
+}
+
+.twitter > * {
+  color: #1da1f2;
+}
+
+.twitter > *:hover {
+  color: #0080ce;
+}

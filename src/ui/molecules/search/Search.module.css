@@ -1,0 +1,9 @@
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search > *:first-child {
+  margin-right: 6px;
+}

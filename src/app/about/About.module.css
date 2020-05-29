@@ -1,0 +1,8 @@
+.card {
+  display: flex;
+  padding: 24px 0;
+}
+
+.card > * {
+  padding-right: 16px;
+}

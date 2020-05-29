@@ -1,0 +1,16 @@
+.navLink {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink li {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 0 18px;
+  text-decoration: none;
+  white-space: nowrap;
+}

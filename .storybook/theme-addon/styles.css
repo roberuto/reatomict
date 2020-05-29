@@ -1,0 +1,22 @@
+.theme-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin: 0 15px;
+  padding: 8px 0;
+}
+
+.theme-button {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px 16px;
+}
+
+.theme-dark {
+  color: #fff;
+  background: #000;
+}
+
+.theme-light {
+  color: #000;
+  background: #fff;
+}

@@ -1,0 +1,7 @@
+@value m-small from "~ui/assets/styles/breakpoints.module.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}

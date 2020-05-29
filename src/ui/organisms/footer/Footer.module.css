@@ -1,0 +1,24 @@
+.footer {
+  background: var(--footer);
+  padding: 8px;
+}
+
+.appInfo > p {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.appName {
+  font-weight: 700;
+  padding-right: 4px;
+}
+
+.socialLinks {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.socialLinks > * {
+  margin: 0 8px;
+}

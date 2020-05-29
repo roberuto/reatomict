@@ -1,0 +1,16 @@
+@value v-border-radius from "../../assets/styles/variables.module.css";
+
+.brand {
+  border: 1px solid var(--color);
+  border-radius: v-border-radius;
+  color: var(--color);
+  padding: 2px;
+}
+
+.brand > * {
+  color: var(--color);
+}
+
+.brand > *:hover {
+  color: var(--color);
+}

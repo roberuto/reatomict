@@ -1,0 +1,44 @@
+@value v-box-shadow from "../../assets/styles/variables.module.css";
+
+.switch {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+}
+
+.input {
+  left: 0;
+  opacity: 0;
+  outline: none;
+  position: absolute;
+  z-index: -1;
+}
+
+.check {
+  align-items: center;
+  background: var(--disabled);
+  border-radius: 24px;
+  box-shadow: v-box-shadow;
+  display: flex;
+  padding: 3px;
+  width: 38px;
+}
+
+.check:before {
+  background: var(--white);
+  border-radius: 24px;
+  content: "";
+  display: block;
+  height: 16px;
+  transition: transform 0.15s ease-out;
+  width: 16px;
+}
+
+.switch input[type="checkbox"]:checked + .check {
+  background: var(--primary);
+}
+
+.switch input[type="checkbox"]:checked + .check:before {
+  transform: translateX(100%);
+}

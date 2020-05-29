@@ -1,0 +1,28 @@
+@value m-small from "../../assets/styles/breakpoints.module.css";
+@value v-border-radius from "../../assets/styles/variables.module.css";
+
+.wrapper {
+  border-radius: v-border-radius;
+  flex-shrink: 0;
+  height: 160px;
+  overflow: hidden;
+  width: 160px;
+}
+
+.image {
+  border-radius: v-border-radius;
+  height: 100%;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+@media m-small {
+  .wrapper {
+    width: 100%;
+  }
+}

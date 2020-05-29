@@ -1,0 +1,28 @@
+@value m-small from "../../assets/styles/breakpoints.module.css";
+
+.card {
+  display: flex;
+  padding: 24px 0;
+}
+
+.card > * {
+  margin-right: 16px;
+}
+
+.left {
+  order: -1;
+}
+
+@media m-small {
+  .card {
+    flex-direction: column;
+  }
+
+  .card > * {
+    margin-right: 0;
+  }
+
+  .left {
+    order: 0;
+  }
+}
